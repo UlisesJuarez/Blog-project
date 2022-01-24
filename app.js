@@ -17,9 +17,24 @@ app.use(express.static("public"));
 
 app.get("/",function(req,res){
   res.render("home",{homeS:homeStartingContent});
+});
+
+app.get("/contact",function(req,res){
+  res.render("contact",{contactI:contactContent});
+});
+
+app.get("/about",function(req,res){
+  res.render("about",{aboutC:aboutContent});
 })
 
+app.get("/compose",function(req,res){
+  res.render("compose",{aboutC:aboutContent});
+});
 
+app.post("/compose",function(req,res){
+  let compose=req.body.item;
+  console.log(compose)
+})
 
 
 
