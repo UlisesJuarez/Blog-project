@@ -39,12 +39,13 @@ app.get("/posts/:postName",function(req,res){
   const requestedTitle=_.lowerCase(req.params.postName);
   
   post.forEach(function(item){
-    const itemTitle=_.lowerCase(litem.title);
+    const itemTitle=_.lowerCase(item.title);
 
     if(itemTitle===requestedTitle){
-      console.log("Match found!")
-    }else{
-      console.log("No a match")
+      res.render("post",{
+        title:item.title,
+        content:item.content
+      })
     }
 
   });
