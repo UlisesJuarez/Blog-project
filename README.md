@@ -8,3 +8,17 @@ Como en el siguiente ejemplo que agrego un nuevo post.
 
 
 ![](img/publish.JPG)
+
+
+----
+
+Ahora se puede ver ese post en mi página de inicio
+
+![](img/home.JPG)
+
+----
+
+Finalmente podemos observar que esos cambios tambien se muestran en la app en línea
+
+![](img/online.JPG)
+
