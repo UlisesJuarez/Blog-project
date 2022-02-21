@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-moongose.connect("mongodb+srv://admin-ulises:Test-uli123@cluster0.0ayal.mongodb.net/BlogProject", { useNewUrlParser: true });
+moongose.connect(secret, { useNewUrlParser: true });
 
 const postSchema = {
   title: String,
